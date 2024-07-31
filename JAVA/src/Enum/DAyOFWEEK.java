@@ -1,0 +1,9 @@
+package Enum;
+
+public enum DAyOFWEEK {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+
+
+
