@@ -25,11 +25,10 @@ public class Login extends Base {
     private By passwordFieldLocator = By.xpath("//input[@name='password']");
     private By loginBtnLocator = By.xpath("//span[text()='Login']");
     private By myProfileLocator = By.xpath("//*[text()=\"My Profile\"]");
-    private By logoutbutton = By.xpath("//a[text()='Logout'and@class=\"jss159\"]");
 
     // credentials
     String mobile = "9640572111";
-    String email = "anithapenke1432+femalemodel@gmail.com";
+    String email = "anithapenke1432+voiceover@gmail.com";
     String Password = "Krify@123";
 
     public void loginWithEmail() {
@@ -43,40 +42,24 @@ public class Login extends Base {
     }
 
 
-    public void loginWithMobile() {
+    public void loginWithMobile(){
 //        email_mobileField.sendKeys(mobile);
 //        passwordField.sendKeys(Password);
 //        loginBtn.click();
     }
 
-    public void getCurrentUrl() {
+    public void getCurrentUrl(){
         //  return driver.getCurrentUrl();
     }
 
-    public boolean isDisplayed_MyProfile() {
+    public boolean isDisplayed_MyProfile(){
         WebElement myProfile = wait.until(ExpectedConditions.visibilityOfElementLocated(myProfileLocator));
         return myProfile.isDisplayed();
     }
 
-
-    public boolean searchview() {
-        WebElement searchfield = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1uvydh2\"] ")));
-        searchfield.isDisplayed();
-        return searchfield.isDisplayed();
-    }
-
-    public void castingcallfilters() {
-        WebElement filters = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"MuiGrid-root MuiGrid-item css-14wsdbg\"]")));
-        filters.isSelected();
-
-    }
-
-    public void selectedprojecttype() {
-        WebElement projecttype = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(" //p[text()=\"Feature Film\"]")));
-        projecttype.isDisplayed();
-    }
-
 }
+
+
 
 
 

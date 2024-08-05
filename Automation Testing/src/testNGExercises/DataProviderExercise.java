@@ -1,2 +1,7 @@
-package testNGExercises;public class DataProviderExercise {
+package testNGExercises;
+
+public class DataProviderExercise {
+
+
+
 }
